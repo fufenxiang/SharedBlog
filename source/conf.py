@@ -26,7 +26,11 @@ extensions = [
 
 html_static_path = ["_static"]
 templates_path = ['_templates']
-html_logo = '_static/logo.PNG'
+# html_css_files = [
+#     'css/custom.css',
+# ]
+html_style = 'css/custom.css'
+html_logo = '_static/imgs/logo.PNG'
 
 exclude_patterns = []
 
