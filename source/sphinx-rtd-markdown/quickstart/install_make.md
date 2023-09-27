@@ -1,43 +1,43 @@
 # Windows 安装 Make
 
 ## 1. Make 简介
-    Make 是一种流行的构建工具，常用于将源代码转换成可执行文件或者其他形式的输出文件(如库文件、文档等)。Make 可以自动化地执行编译、链接等一系列操作，提高开发效率。
+Make 是一种流行的构建工具，常用于将源代码转换成可执行文件或者其他形式的输出文件(如库文件、文档等)。Make 可以自动化地执行编译、链接等一系列操作，提高开发效率。
 
-   - Make 使用 **Makefile 文件** 描述项目的构建过程，其中包含了源文件、目标文件以及编译和链接的命令等信息。Makefile 按照一定的规则解析，将源码和构建过程相互关联起来，执行具体的构建操作，生成目标文件或可执行文件。
+- Make 使用 **Makefile 文件** 描述项目的构建过程，其中包含了源文件、目标文件以及编译和链接的命令等信息。Makefile 按照一定的规则解析，将源码和构建过程相互关联起来，执行具体的构建操作，生成目标文件或可执行文件。
 
-   - Make 工具的优势在于它可以识别哪些文件被修改了，只编译修改过的部分，以提高构建速度。此外，Make 工具还支持基于条件的编译，也就是预处理器(preprocessor)功能，可以生成不同的输出文件用于不同的平台或不同的运行环境。
+- Make 工具的优势在于它可以识别哪些文件被修改了，只编译修改过的部分，以提高构建速度。此外，Make 工具还支持基于条件的编译，也就是预处理器(preprocessor)功能，可以生成不同的输出文件用于不同的平台或不同的运行环境。
 
-   - Make 工具具有很好的 **跨平台性**，可以在 Unix/Linux、Windows、Mac 等多种操作系统上使用，并且可以与多种编程语言搭配使用，如 C、C++、Java 等。
+- Make 工具具有很好的 **跨平台性**，可以在 Unix/Linux、Windows、Mac 等多种操作系统上使用，并且可以与多种编程语言搭配使用，如 C、C++、Java 等。
 
-    总之，Make 工具是一种非常实用的构建工具，可以帮助开发者高效地管理和构建项目。
+总之，Make 工具是一种非常实用的构建工具，可以帮助开发者高效地管理和构建项目。
 
 
 ## 2. 下载 MinGWMinGW 安装包
 
-   在Windows中没有make，但是可以通过安装MinGW或者MinGW-w64，得到make。
+在Windows中没有make，但是可以通过安装MinGW或者MinGW-w64，得到make。
 
-   下载 MinGWMinGW，官网下载：[http://www.mingw.org](http://www.mingw.org)，点击右上角Downloads：
+下载 MinGWMinGW，官网下载：[http://www.mingw.org](http://www.mingw.org)，点击右上角Downloads：
 
-   <img alt="Download Make" src="../../_static/imgs/sphinx/install-make-step1.PNG" width="85%">
+<img alt="Download Make" src="../../_static/imgs/sphinx/install-make-step1.PNG" width="85%">
 
-   或者网盘下载：链接：[https://pan.baidu.com/s/1vQVKycK1TKVsnLV_OMgiCg](https://pan.baidu.com/s/1vQVKycK1TKVsnLV_OMgiCg) 提取码：bbhl。
+或者网盘下载：链接：[https://pan.baidu.com/s/1vQVKycK1TKVsnLV_OMgiCg](https://pan.baidu.com/s/1vQVKycK1TKVsnLV_OMgiCg) 提取码：bbhl。
 
-   点击下载 mingw-get-setup.exe:
+点击下载 mingw-get-setup.exe:
 
-   <img alt="Download Make" src="../../_static/imgs/sphinx/install-make-step2.PNG" width="85%">
+<img alt="Download Make" src="../../_static/imgs/sphinx/install-make-step2.PNG" width="85%">
 
 
 ## 3. 安装 MinGWMinGW
 
-   直接默认安装就好了，如果不想安装在C盘，修改的安装路径最好不要有空格。
+直接默认安装就好了，如果不想安装在C盘，修改的安装路径最好不要有空格。
 
-   <img alt="Install Make" src="../../_static/imgs/sphinx/install-make-step3.PNG" width="80%">
+<img alt="Install Make" src="../../_static/imgs/sphinx/install-make-step3.PNG" width="80%">
 
-   安装完之后将MinGW\bin路径添加到系统环境变量里：
+安装完之后将MinGW\bin路径添加到系统环境变量里：
   
-   此电脑 -> 右键 "属性" -> 高级系统设置 -> 高级 -> 环境变量 -> 系统环境变量下找到 "Path"，双击 新建 -> 把MinGW\bin的路径复制进去 -> 然后一路点"确定"退出。
+此电脑 -> 右键 "属性" -> 高级系统设置 -> 高级 -> 环境变量 -> 系统环境变量下找到 "Path"，双击 新建 -> 把MinGW\bin的路径复制进去 -> 然后一路点"确定"退出。
 
-   <img alt="Install Make" src="../../_static/imgs/sphinx/install-make-step4.PNG" width="60%"> 
+<img alt="Install Make" src="../../_static/imgs/sphinx/install-make-step4.PNG" width="60%"> 
 
 
 ## 4. 安装 Make Package

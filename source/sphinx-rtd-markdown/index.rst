@@ -8,3 +8,5 @@ Sphinx and ReadTheDocs
    quickstart/install_make
    quickstart/sphinx_quick_start
    quickstart/github_rtd
+   quickstart/rtd_locale
+   quickstart/sphinx_theme

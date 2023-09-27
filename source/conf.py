@@ -20,17 +20,26 @@ release = '0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    # markdown 格式文档支持
     'recommonmark',
-    'sphinx_markdown_tables'
+    # markdown 表格支持
+    'sphinx_markdown_tables',
+    # 多版本文档支持
+    "sphinx_multiversion",
 ]
 
-html_static_path = ["_static"]
 templates_path = ['_templates']
+html_sidebars = {
+    '**': [
+        'version.html',
+    ],
+}
+# html_static_path = ["_static"]
 # html_css_files = [
 #     'css/custom.css',
 # ]
-html_style = 'css/custom.css'
-html_logo = '_static/imgs/logo.PNG'
+# html_style = 'css/custom.css'
+# html_logo = '_static/imgs/logo.PNG'
 
 exclude_patterns = []
 
@@ -45,4 +54,6 @@ language = 'en'
 
 # html_theme = 'alabaster'
 # html_theme = 'classic'
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'agogo'
+# html_theme = 'bizstyle'
+# html_theme = 'sphinx_rtd_theme'
