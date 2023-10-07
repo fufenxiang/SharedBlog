@@ -1,8 +1,7 @@
-Nginx 使用
+CKEditor 的使用
 =================================
 
 .. toctree::
    :maxdepth: 2
 
    quickstart
-   configuration

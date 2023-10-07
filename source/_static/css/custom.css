@@ -46,3 +46,39 @@ a:hover {
 .logo {
     width: 240px !important;
 }
+
+/* ================== 版本选择下拉框 ================== */
+div.dropdown {
+    position: relative;
+    display: inline-block; 
+    margin-left: 15%;
+}
+#version_selector::after {
+    content: '\25bc';
+}
+ul.dropdown-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 22px;
+    width: 100%;
+    background-color: #404040;
+    box-sizing: border-box;
+    font-family: "Verdana", Arial, sans-serif;
+    font-size: medium;
+}
+div.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+li.dropdown-item {
+    clear: both;
+    padding: 6px;
+    border-bottom: 2px #fff solid;
+    font-size: medium;
+    color: #fff;
+    letter-spacing: .1em;
+}
+li.dropdown-item:hover {
+    background: #7c7c7c;
+}
+/* ================== 版本选择下拉框 ================== */

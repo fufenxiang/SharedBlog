@@ -29,15 +29,15 @@ extensions = [
 ]
 
 templates_path = ['_templates']
-html_sidebars = {
-    '**': [
-        'version.html',
-    ],
-}
-# html_static_path = ["_static"]
-# html_css_files = [
-#     'css/custom.css',
-# ]
+# html_sidebars = {
+#     '**': [
+#         'versioning.html',
+#     ],
+# }
+html_static_path = ["_static"]
+html_css_files = [
+    'css/custom.css',
+]
 # html_style = 'css/custom.css'
 # html_logo = '_static/imgs/logo.PNG'
 
@@ -54,6 +54,7 @@ language = 'en'
 
 # html_theme = 'alabaster'
 # html_theme = 'classic'
+# html_theme = 'sizzle'
 html_theme = 'agogo'
 # html_theme = 'bizstyle'
 # html_theme = 'sphinx_rtd_theme'
